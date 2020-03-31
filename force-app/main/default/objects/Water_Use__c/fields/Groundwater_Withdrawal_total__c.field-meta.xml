@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Groundwater_Withdrawal_total__c</fullName>
+    <externalId>false</externalId>
+    <formula>(Groundwater_Freshwater_Withdrawal__c + Groundwater_Other_Water_Withdrawal__c)
+/
+CASE( Withdrawal_Unit__c, 
+ 	&quot;CCF&quot;, 353.147,
+ 	&quot;Gallons&quot;, 264172,
+	&quot;Liters&quot;, 1000000,
+	1
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Groundwater Withdrawal (total)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

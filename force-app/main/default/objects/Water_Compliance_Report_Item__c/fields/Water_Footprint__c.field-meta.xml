@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Water_Footprint__c</fullName>
+    <externalId>false</externalId>
+    <label>Water Footprint</label>
+    <referenceTo>Water_Footprint__c</referenceTo>
+    <relationshipLabel>Water Compliance Report Items</relationshipLabel>
+    <relationshipName>Water_Compliance_Report_Items</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>true</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

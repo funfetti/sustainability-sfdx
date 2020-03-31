@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Stage__c</fullName>
+    <externalId>false</externalId>
+    <label>Stage</label>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Asset Confirmation</fullName>
+                <default>false</default>
+                <label>Asset Confirmation</label>
+            </value>
+            <value>
+                <fullName>Data Collection</fullName>
+                <default>false</default>
+                <label>Data Collection</label>
+            </value>
+            <value>
+                <fullName>Interpolation</fullName>
+                <default>false</default>
+                <label>Interpolation</label>
+            </value>
+            <value>
+                <fullName>Validation</fullName>
+                <default>false</default>
+                <label>Validation</label>
+            </value>
+            <value>
+                <fullName>Water Stress Evaluation</fullName>
+                <default>false</default>
+                <label>Water Stress Evaluation</label>
+            </value>
+            <value>
+                <fullName>Internal Audit</fullName>
+                <default>false</default>
+                <label>Internal Audit</label>
+            </value>
+            <value>
+                <fullName>External Audit</fullName>
+                <default>false</default>
+                <label>External Audit</label>
+            </value>
+            <value>
+                <fullName>Finished</fullName>
+                <default>false</default>
+                <label>Finished</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
