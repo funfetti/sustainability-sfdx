@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
     <brand>
-        <headerColor>#0070D2</headerColor>
-        <logo>X2018sf_sustainability_2C_icon_RGB1</logo>
+        <headerColor>#00A1E0</headerColor>
+        <logo>iconsustainwater</logo>
         <logoVersion>1</logoVersion>
         <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
     </brand>
@@ -10,14 +10,14 @@
     <formFactors>Large</formFactors>
     <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
     <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
-    <label>Sustainability Water WIP</label>
+    <label>Sustainability - Water</label>
     <navType>Console</navType>
-    <tabs>standard-Feed</tabs>
     <tabs>Water_Footprint__c</tabs>
     <tabs>Water_Use__c</tabs>
     <tabs>Water_Compliance__c</tabs>
     <tabs>sustain_app__Asset__c</tabs>
     <tabs>Water_Supplier__c</tabs>
+    <tabs>standard-Feed</tabs>
     <tabs>standard-report</tabs>
     <tabs>standard-Dashboard</tabs>
     <uiType>Lightning</uiType>

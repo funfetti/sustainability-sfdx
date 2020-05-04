@@ -1,5 +1,15 @@
 {
-  "orgName": "stephanie.ho company",
+  "orgName": "sustainability cloud water component",
   "edition": "Developer",
-  "features": []
+  "features": [
+    "SustainabilityCloud",
+    "DevelopmentWave",
+    "AnalyticsAdminPerms",
+    "EinsteinAnalyticsPlus"
+  ],
+  "settings": {
+    "pathAssistantSettings": {
+      "pathAssistantEnabled": true
+    }
+  }
 }
