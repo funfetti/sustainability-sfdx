@@ -74,7 +74,7 @@
             <targetReference>get_Water_Use_record</targetReference>
         </connector>
     </start>
-    <status>Draft</status>
+    <status>Active</status>
     <subflows>
         <name>send_each_water_footprint_for_calculation</name>
         <label>send each water footprint for calculation</label>
