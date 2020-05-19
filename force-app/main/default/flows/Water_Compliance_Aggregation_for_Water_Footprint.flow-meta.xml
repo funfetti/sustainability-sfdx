@@ -32,8 +32,9 @@
             <targetReference>update_water_footprint</targetReference>
         </connector>
     </assignments>
-    <interviewLabel>1 sustain water compliance calcs {!$Flow.CurrentDateTime}</interviewLabel>
-    <label>1 sustain water compliance calcs</label>
+    <description>Sums up all related Water Compliance data for the totals on Water Footprint. Part of the Sustainability Water package.</description>
+    <interviewLabel>Water Compliance Aggregation for Water Footprint {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Water Compliance Aggregation for Water Footprint</label>
     <loops>
         <name>loop_through_compliance_items</name>
         <label>loop through compliance items</label>

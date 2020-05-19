@@ -10,14 +10,14 @@
         <processMetadataValues>
             <name>flowSelection</name>
             <value>
-                <stringValue>1 sustain water compliance roll up helper</stringValue>
+                <stringValue>Water Compliance to Footprint Roll Up Helper</stringValue>
             </value>
         </processMetadataValues>
         <name>myRule_1_A1</name>
-        <label>recalculate compliance for WF</label>
+        <label>recalculate compliance fines summary</label>
         <locationX>100</locationX>
         <locationY>200</locationY>
-        <actionName>X1_sustain_water_compliance_roll_up_helper</actionName>
+        <actionName>Water_Compliance_to_Footprint_Roll_Up_Helper</actionName>
         <actionType>flow</actionType>
         <inputParameters>
             <processMetadataValues>
@@ -143,11 +143,12 @@
             <connector>
                 <targetReference>myRule_1_A1</targetReference>
             </connector>
-            <label>has value changed</label>
+            <label>has penalty value changed</label>
         </rules>
     </decisions>
-    <interviewLabel>X1_Sustain_Water_Compliance_calc-4_InterviewLabel</interviewLabel>
-    <label>1 Sustain Water Compliance calc</label>
+    <description>Monitors Water Compliance record for numerical changes. Will then kick off the roll up helper flow. Part of the Sustainability Water Package</description>
+    <interviewLabel>Sustain_Water_Compliance_Watcher-1_InterviewLabel</interviewLabel>
+    <label>Sustainability Water Compliance Calculation Watcher</label>
     <processMetadataValues>
         <name>ObjectType</name>
         <value>

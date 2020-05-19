@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
-    <interviewLabel>1 sustain water compliance roll up helper {!$Flow.CurrentDateTime}</interviewLabel>
-    <label>1 sustain water compliance roll up helper</label>
+    <description>Grabs all the Water Footprints related (via junction obj) to a Water Compliance record. Part of the Sustainability Water package.</description>
+    <interviewLabel>Water Compliance to Footprint Roll Up Helper {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Water Compliance to Footprint Roll Up Helper</label>
     <loops>
         <name>loop_through_compliance_items</name>
         <label>loop through compliance items</label>
@@ -11,7 +12,7 @@
         <collectionReference>list_all_compliance_report_items</collectionReference>
         <iterationOrder>Asc</iterationOrder>
         <nextValueConnector>
-            <targetReference>send_to_calculator</targetReference>
+            <targetReference>send_all_wf_for_recalculation</targetReference>
         </nextValueConnector>
     </loops>
     <processMetadataValues>
@@ -76,14 +77,14 @@
     </start>
     <status>Active</status>
     <subflows>
-        <name>send_to_calculator</name>
-        <label>send to calculator</label>
+        <name>send_all_wf_for_recalculation</name>
+        <label>send all wf for recalculation</label>
         <locationX>519</locationX>
-        <locationY>303</locationY>
+        <locationY>271</locationY>
         <connector>
             <targetReference>loop_through_compliance_items</targetReference>
         </connector>
-        <flowName>X1_sustain_water_compliance_calcs</flowName>
+        <flowName>Water_Compliance_Aggregation_for_Water_Footprint</flowName>
         <inputAssignments>
             <name>WFrecordId</name>
             <value>
