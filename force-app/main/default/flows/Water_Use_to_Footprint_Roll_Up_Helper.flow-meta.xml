@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
-    <interviewLabel>1 Sustain Water Calc roll up from Water Use {!$Flow.CurrentDateTime}</interviewLabel>
-    <label>1 Sustain Water Use roll up helper</label>
+    <description>Grabs all the Water Footprints related (via junction obj) to a Water Use record. Part of the Sustainability Water package.</description>
+    <interviewLabel>Water Use to Footprint Roll Up Helper {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Water Use to Footprint Roll Up Helper</label>
     <loops>
         <name>loop_through_water_footprints</name>
         <label>loop through water footprints</label>
@@ -11,7 +12,7 @@
         <collectionReference>get_all_water_footprint_report_items</collectionReference>
         <iterationOrder>Asc</iterationOrder>
         <nextValueConnector>
-            <targetReference>send_each_water_footprint_for_calculation</targetReference>
+            <targetReference>send_each_footprint_for_recalculation</targetReference>
         </nextValueConnector>
     </loops>
     <processMetadataValues>
@@ -30,7 +31,7 @@
     <recordLookups>
         <name>get_all_water_footprint_report_items</name>
         <label>get all water footprint report items</label>
-        <locationX>415</locationX>
+        <locationX>459</locationX>
         <locationY>49</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
@@ -76,14 +77,14 @@
     </start>
     <status>Active</status>
     <subflows>
-        <name>send_each_water_footprint_for_calculation</name>
-        <label>send each water footprint for calculation</label>
-        <locationX>642</locationX>
-        <locationY>253</locationY>
+        <name>send_each_footprint_for_recalculation</name>
+        <label>send each footprint for recalculation</label>
+        <locationX>647</locationX>
+        <locationY>241</locationY>
         <connector>
             <targetReference>loop_through_water_footprints</targetReference>
         </connector>
-        <flowName>X1_Sustain_Water_Sums_Single_Record</flowName>
+        <flowName>Water_Use_Aggregation_for_Water_Footprint</flowName>
         <inputAssignments>
             <name>WFrecordId</name>
             <value>

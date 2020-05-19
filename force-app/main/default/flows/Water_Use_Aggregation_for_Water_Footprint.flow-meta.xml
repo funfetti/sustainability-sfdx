@@ -174,8 +174,9 @@
             <targetReference>loop_through_report_items</targetReference>
         </connector>
     </assignments>
-    <interviewLabel>Sustain Water Sums Single Record {!$Flow.CurrentDateTime}</interviewLabel>
-    <label>1 Sustain Water Sums Single Record</label>
+    <description>Sums up all related Water Use data for the totals on Water Footprint</description>
+    <interviewLabel>Water Use Aggregation for Water Footprint {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Water Use Aggregation for Water Footprint</label>
     <loops>
         <name>loop_through_report_items</name>
         <label>loop through report items</label>

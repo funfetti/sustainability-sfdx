@@ -10,14 +10,14 @@
         <processMetadataValues>
             <name>flowSelection</name>
             <value>
-                <stringValue>1 Sustain Water Calc roll up from Water Use</stringValue>
+                <stringValue>Water Use to Footprint Roll Up Helper</stringValue>
             </value>
         </processMetadataValues>
         <name>myRule_1_A1</name>
-        <label>recalculate all WF</label>
+        <label>recalc all related WF</label>
         <locationX>100</locationX>
         <locationY>200</locationY>
-        <actionName>X1_Sustain_Water_Calc_roll_up_from_Water_Use</actionName>
+        <actionName>Water_Use_to_Footprint_Roll_Up_Helper</actionName>
         <actionType>flow</actionType>
         <inputParameters>
             <processMetadataValues>
@@ -269,11 +269,12 @@
             <connector>
                 <targetReference>myRule_1_A1</targetReference>
             </connector>
-            <label>Did they change inputs</label>
+            <label>Did they change usage inputs</label>
         </rules>
     </decisions>
-    <interviewLabel>X1_Sustain_Water_Calc-2_InterviewLabel</interviewLabel>
-    <label>1 Sustain Water Calc</label>
+    <description>Monitors Water Use record for numerical changes. Will then kick off the roll up helper flow. Part of the Sustainability Water Package</description>
+    <interviewLabel>Sustain_Water_Use_Watcher-3_InterviewLabel</interviewLabel>
+    <label>Sustainability Water Use Calculation Watcher</label>
     <processMetadataValues>
         <name>ObjectType</name>
         <value>
