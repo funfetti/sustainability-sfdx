@@ -1,4 +1,4 @@
-# Design Doc: documentation: https://sfdc.co/sustainWater
+# Design Doc: https://sfdc.co/sustainWater
 
 I made this app to track:
 
