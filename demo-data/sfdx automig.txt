@@ -1,0 +1,18 @@
+sfdx automig 
+
+sustain_app__Asset__c,
+Water_Compliance__c,
+Water_Compliance_Report_Item__c,
+Water_Footprint__c,
+Water_Footprint_Report_Item__c,
+Water_Supplier__c,
+Water_Use__c,
+RecordType
+
+## to dump
+
+sfdx automig:dump -d demo-data/ -o sustain_app__Asset__c,Water_Compliance__c,Water_Compliance_Report_Item__c,Water_Footprint__c,Water_Footprint_Report_Item__c,Water_Supplier__c,Water_Use__c,RecordType
+
+## to load
+
+sfdx automig:load -d demo-data/ --mappingobjects RecordType:DeveloperName
