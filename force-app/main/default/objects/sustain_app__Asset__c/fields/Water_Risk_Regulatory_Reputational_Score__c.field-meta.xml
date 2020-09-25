@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>Asset_LatLong__c</fullName>
-    <displayLocationInDecimal>true</displayLocationInDecimal>
+    <fullName>Water_Risk_Regulatory_Reputational_Score__c</fullName>
     <externalId>false</externalId>
-    <label>Asset LatLong</label>
+    <inlineHelpText>w_awr_def_rrr_score</inlineHelpText>
+    <label>Water Risk - Regulatory &amp; Reputation Sc</label>
+    <precision>18</precision>
     <required>false</required>
-    <scale>10</scale>
+    <scale>8</scale>
     <trackFeedHistory>false</trackFeedHistory>
     <trackHistory>false</trackHistory>
     <trackTrending>false</trackTrending>
-    <type>Location</type>
+    <type>Number</type>
+    <unique>false</unique>
 </CustomField>

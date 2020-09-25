@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>Type_of_incident__c</fullName>
+    <fullName>Overall_Total_Water_Risk__c</fullName>
     <externalId>false</externalId>
-    <label>Type of incident</label>
+    <inlineHelpText>in the WRI output: w_awr_def_tot_label</inlineHelpText>
+    <label>Overall Total Water Risk</label>
     <required>false</required>
     <trackFeedHistory>false</trackFeedHistory>
     <trackHistory>false</trackHistory>
@@ -12,29 +13,29 @@
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
-                <fullName>Spillage, leakage, or discharge of potential water pollutant</fullName>
+                <fullName>Low (0-1)</fullName>
                 <default>false</default>
-                <label>Spillage, leakage, or discharge of potential water pollutant</label>
+                <label>Low (0-1)</label>
             </value>
             <value>
-                <fullName>Failure to monitor effluent</fullName>
+                <fullName>Low-Medium (1-2)</fullName>
                 <default>false</default>
-                <label>Failure to monitor effluent</label>
+                <label>Low-Medium (1-2)</label>
             </value>
             <value>
-                <fullName>Effluent limit exceedances</fullName>
+                <fullName>Medium-High (2-3)</fullName>
                 <default>false</default>
-                <label>Effluent limit exceedances</label>
+                <label>Medium-High (2-3)</label>
             </value>
             <value>
-                <fullName>Abstraction without a permit or abstraction that exceeded permit</fullName>
+                <fullName>High (3-4)</fullName>
                 <default>false</default>
-                <label>Abstraction without a permit or abstraction that exceeded permit</label>
+                <label>High (3-4)</label>
             </value>
             <value>
-                <fullName>Other non-compliance</fullName>
+                <fullName>Extremely High (4-5)</fullName>
                 <default>false</default>
-                <label>Other non-compliance</label>
+                <label>Extremely High (4-5)</label>
             </value>
         </valueSetDefinition>
     </valueSet>

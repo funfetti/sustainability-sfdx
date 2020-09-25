@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Low (0-1)</fullName>
+        <default>false</default>
+        <label>Low (0-1)</label>
+    </customValue>
+    <customValue>
+        <fullName>Low - Medium (1-2)</fullName>
+        <default>false</default>
+        <label>Low - Medium (1-2)</label>
+    </customValue>
+    <customValue>
+        <fullName>Medium - High (2-3)</fullName>
+        <default>false</default>
+        <label>Medium - High (2-3)</label>
+    </customValue>
+    <customValue>
+        <fullName>High (3-4)</fullName>
+        <default>false</default>
+        <label>High (3-4)</label>
+    </customValue>
+    <customValue>
+        <fullName>Extremely High (4-5)</fullName>
+        <default>false</default>
+        <label>Extremely High (4-5)</label>
+    </customValue>
+    <masterLabel>Water Risk Label</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

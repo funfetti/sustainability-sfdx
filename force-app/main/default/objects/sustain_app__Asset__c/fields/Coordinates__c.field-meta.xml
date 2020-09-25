@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>Area_with_Water_Stress__c</fullName>
-    <defaultValue>false</defaultValue>
+    <fullName>Coordinates__c</fullName>
+    <displayLocationInDecimal>true</displayLocationInDecimal>
     <externalId>false</externalId>
-    <label>Area with Water Stress</label>
+    <label>Coordinates</label>
+    <required>false</required>
+    <scale>6</scale>
     <trackFeedHistory>false</trackFeedHistory>
     <trackHistory>false</trackHistory>
     <trackTrending>false</trackTrending>
-    <type>Checkbox</type>
+    <type>Location</type>
 </CustomField>
