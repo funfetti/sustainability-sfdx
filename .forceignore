@@ -4,9 +4,15 @@
 
 package.xml
 
+# wave until i figure out how to fix it
+**/main/default/wave
+**OA_Names**
+**Water_App**
+
 # LWC configuration files
 **/jsconfig.json
 **/.eslintrc.json
 
 # LWC Jest
 **/__tests__/**
+
